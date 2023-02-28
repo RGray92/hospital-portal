@@ -9,10 +9,13 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <Link to="/clinic">Clinic</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/medteam">Medteam</Link>
+          </li>
+          <li>
+            <Link to="/entertainment">Entertainment</Link>
           </li>
         </ul>
       </nav>
