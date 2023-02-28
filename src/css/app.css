@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
 * {
   font-family: "Antic", sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
   list-style-type: none;
   overflow: hidden;
-  background-color: #ff4912;
+  background-color: white;
 }
 
 li {
@@ -17,15 +17,15 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #ff4912;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: white;
-  color: black;
+  background-color: #ff4912;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
