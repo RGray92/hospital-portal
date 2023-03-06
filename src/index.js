@@ -1,25 +1,52 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Clinic from "./pages/Clinic";
-import Entertainment from "./pages/Entertainment";
-import Medteam from "./pages/Medteam"
+import React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
+import './css/app.css';
+import Home from "./routes/Home";
+import Clinic from "./routes/Clinic";
+import Medteam from "./routes/Medteam";
+import Entertainment from "./routes/Entertainment";
+import Navbar from "./components/Navbar";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="clinic" element={<Clinic />} />
-          <Route path="medteam" element={<Medteam />} />
-          <Route path="entertainment" element={<Entertainment />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+
+const AppLayout = () => {
+  return(
+    <>
+    <Navbar />
+    <Outlet />
+    </>
   );
-}
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+const router = createBrowserRouter([
+  {
+    element: <AppLayout/>,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "clinic",
+        element: <Clinic />,
+      },
+      {
+        path: "medteam",
+        element: <Medteam />,
+      },
+      {
+        path: "entertainment",
+        element: <Entertainment />,
+      },
+    ],
+  },
+]);
+
+
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);

@@ -1,4 +1,6 @@
+// Commands to install and watch sass
+// npm install -g sass
 // npx sass --watch ./src/scss/app.scss ./src/css/app.css
 
-@import 'global';
-@import 'nav';
+@import "global";
+@import "navbar";
