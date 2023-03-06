@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import {GiHospitalCross} from "react-icons/gi";
 import {FaBars, FaTimes} from "react-icons/fa";
-import {IconContext} from "react-icons/lib";
 
 function Navbar(){
   const [click, setClick] = useState(false);
