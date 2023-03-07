@@ -63,7 +63,9 @@
 }
 
 .nav-item:hover {
-  border-top: 2px solid #ff4912;
+  color: white;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .nav-links {
@@ -77,6 +79,7 @@
 
 .activated {
   background-color: #ff4912;
+  border-radius: 1rem;
   color: white;
 }
 
@@ -120,7 +123,7 @@
   }
 
   .nav-links:hover {
-    color: #09bef0;
+    color: white;
     transform: scale(1.2);
     transition: all 0.3s ease;
   }
