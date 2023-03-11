@@ -10,7 +10,9 @@ import Home from "./routes/Home";
 import Clinic from "./routes/Clinic";
 import Medteam from "./routes/Medteam";
 import Entertainment from "./routes/Entertainment";
+import Profile from "./routes/Profile";
 import Navbar from "./components/Navbar";
+
 
 
 const AppLayout = () => {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "entertainment",
         element: <Entertainment />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
       },
     ],
   },

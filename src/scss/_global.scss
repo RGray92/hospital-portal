@@ -5,9 +5,40 @@
     font-family: 'Antic', sans-serif;
 }
 
+header{
+    background-color: #ff4912;
+    height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
 h1{
     justify-content: center;
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ff4912;
+}
+
+h2{
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ff4912;
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: #ff4912;
 }
